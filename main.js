@@ -186,4 +186,14 @@ function loop () {
     requestAnimationFrame(loop);
 };
 
-// loop();
+function startGame () {
+    loop();
+}
+
+
+const startBtn = document.querySelector("h2");
+
+startBtn.addEventListener("click", () => {
+    startGame();
+    startBtn.style.display = "none";
+})
